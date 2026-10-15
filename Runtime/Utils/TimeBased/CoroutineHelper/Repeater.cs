@@ -4,33 +4,8 @@ using UnityEngine;
 
 namespace UtilsToolbox.Utils.TimeBased.CoroutineHelper
 {
-    public static class Repeater
+    internal static class Repeater
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="duration"></param>
-        /// <param name="onEachTimestamp"></param>
-        /// <param name="onFinish"></param>
-        /// <returns></returns>
-        public static IEnumerator EachSecond(float duration, Action<float> onEachTimestamp, Action onFinish = null)
-        {
-            return EachTimestamp(duration, 1, onEachTimestamp, onFinish);
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="stopPredicate"></param>
-        /// <param name="onEachTimestamp"></param>
-        /// <param name="onFinish"></param>
-        /// <returns></returns>
-        public static IEnumerator EachSecond(Func<bool> stopPredicate, Action<float> onEachTimestamp,
-            Action onFinish = null)
-        {
-            return EachTimestamp(stopPredicate, 1, onEachTimestamp, onFinish);
-        }
-
         /// <summary>
         /// Invokes callback each timestamp in n seconds duration
         /// </summary>

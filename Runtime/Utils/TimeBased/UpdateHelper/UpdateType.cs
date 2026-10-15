@@ -1,4 +1,4 @@
-namespace UtilsToolbox.Utils.TimeBased.Update
+namespace UtilsToolbox.Utils.TimeBased.UpdateHelper
 {
     public enum UpdateType
     {

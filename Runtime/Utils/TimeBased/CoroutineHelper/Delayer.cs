@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace UtilsToolbox.Utils.TimeBased.CoroutineHelper
 {
-    public static class Delayer
+    internal static class Delayer
     {
         /// <summary>
         /// Delays callback invocation by single frame
@@ -27,24 +27,12 @@ namespace UtilsToolbox.Utils.TimeBased.CoroutineHelper
         {
             return Delay(callback, new WaitForSeconds(time));
         }
-        
-        /// <summary>
-        /// Delays callback invocation by a coroutine
-        /// </summary>
-        /// <param name="callback"> action that will be performed after the delay </param>
-        /// <param name="coroutine"> coroutine to wait for </param>
-        /// <returns></returns>
-        public static IEnumerator Delay(Action callback, IEnumerator coroutine)
-        {
-            yield return coroutine;
-            callback?.Invoke();
-        }
 
         /// <summary>
         /// Delays callback invocation by a custom yield instruction
         /// </summary>
         /// <param name="callback"> action that will be performed after the delay </param>
-        /// <param name="customYieldInstruction"> custom yield instruction to wait for </param>
+        /// <param name="customYieldInstruction"> yield instruction to wait for </param>
         /// <returns></returns>
         public static IEnumerator Delay(Action callback, CustomYieldInstruction customYieldInstruction)
         {
@@ -56,7 +44,7 @@ namespace UtilsToolbox.Utils.TimeBased.CoroutineHelper
         /// Delays callback invocation by a yield instruction
         /// </summary>
         /// <param name="callback"> action that will be performed after the delay </param>
-        /// <param name="yieldInstruction"> basic yield instruction to wait for </param>
+        /// <param name="yieldInstruction"> yield instruction to wait for </param>
         /// <returns></returns>
         public static IEnumerator Delay(Action callback, YieldInstruction yieldInstruction)
         {

@@ -1,9 +1,9 @@
 {
-  "name": "com.skallski.utils-toolbox",
-  "version": "1.4.1",
-  "displayName": "Utils Toolbox",
-  "description": "Package full of tools, extensions and many QoL improvements.",
-  "unity": "2022.3",
+  "name": "com.skallski.swissknife",
+  "version": "1.4.2",
+  "displayName": "Swissknife",
+  "description": "A collection of tools, extensions, and quality-of-life improvements I find useful in everyday Unity development.",
+  "unity": "2023.3",
   "keywords": [
     "utils",
     "extensions",

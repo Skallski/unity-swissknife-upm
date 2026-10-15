@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UtilsToolbox.Utils.TimeBased.Update
+namespace UtilsToolbox.Utils.TimeBased.UpdateHelper
 {
     public class UpdateManager : MonoBehaviour
     {

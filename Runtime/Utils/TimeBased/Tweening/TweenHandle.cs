@@ -6,11 +6,11 @@ namespace UtilsToolbox.Utils.TimeBased.Tweening
     public class TweenHandle
     {
         private MonoBehaviour _caller;
-        private Coroutine _coroutine;
+        private UnityEngine.Coroutine _coroutine;
         private Action _onSkip;
         internal bool IsActive { get; private set; }
 
-        internal TweenHandle(MonoBehaviour caller, Coroutine coroutine, Action onSkip)
+        internal TweenHandle(MonoBehaviour caller, UnityEngine.Coroutine coroutine, Action onSkip)
         {
             _caller = caller ?? throw new ArgumentNullException("Coroutine caller cannot be null!");
             _coroutine = coroutine ?? throw new ArgumentNullException("Coroutine cannot be null!");
