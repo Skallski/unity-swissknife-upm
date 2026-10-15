@@ -1,6 +1,6 @@
 {
   "name": "com.skallski.swissknife",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "displayName": "Swissknife",
   "description": "A collection of tools, extensions, and quality-of-life improvements I find useful in everyday Unity development.",
   "unity": "2023.3",

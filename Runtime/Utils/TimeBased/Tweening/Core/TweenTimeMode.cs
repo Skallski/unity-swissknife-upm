@@ -1,4 +1,4 @@
-namespace UtilsToolbox.Utils.TimeBased.Tweening
+namespace UtilsToolbox.Utils.TimeBased.Tweening.Core
 {
     public enum TweenTimeMode
     {
